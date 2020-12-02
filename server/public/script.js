@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000', { //Server domain
+const socket = io('', { //Server domain
 	path: '' //Server api path
 });
 
