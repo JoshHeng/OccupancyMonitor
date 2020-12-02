@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html {
+	font-family: 'Nunito', sans-serif;
+	background-color: #fbffd9;
+	color: #343434;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+main {
+	text-align: center;
+}
+
+h1 {
+	font-size: 3vw;
+	margin-bottom: 5vw;
+}
+#people-count-div {
+	font-size: 8vw;
+}
+#people-count-div i, #people-count-live {
+	font-size: 1.4em;
+	color: #25b84c;
+}
+#people-count-div.full i, #people-count-live {
+	color: #d14419;
+}
+
+#people-count-div p {
+	margin-top: -1rem;
+}
