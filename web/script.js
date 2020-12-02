@@ -21,7 +21,7 @@ socket.on('heartbeat', (current, max) => {
 	}
 
 	heartbeatTimeout = setTimeout(() => {
-		document.getElementById('people-count-current').innerText = '?';
-		document.getElementById('people-count-max').innerText = '?';
+		document.getElementById('people-count-current').innerText = '? ';
+		document.getElementById('people-count-max').innerText = ' ?';
 	}, 12000);
 });
