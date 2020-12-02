@@ -11,7 +11,7 @@ const io = require('socket.io')(http, {
 
 var currentPeople = 0;
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
 	return res.send('Occupancy monitor running');
 });
 app.post('/increase', (req, res) => {
