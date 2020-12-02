@@ -1,5 +1,5 @@
-const maxPeople = 5; //Maximum people allowed at once
-const secret = 'secret'; //Secret for the button client
+const maxPeople = parseInt(process.env.MAX_PEOPLE) || 5; //Maximum people allowed at once
+const secret = process.env.SECRET || 'secret'; //Secret for the button client
 
 const express = require('express');
 const path = require('path');
@@ -17,7 +17,10 @@ var currentPeople = 0;
 app.use(express.static('public'));
 app.get('/', (req, res) => {
 	return res.sendFile(path.join(__dirname  + '/index.html'));
-})
+});
+app.get('/status', (req, res) => {
+	return res.status(200).json({ max: currentPeople >= maxPeople });
+});
 app.get('/api', (req, res) => {
 	return res.send('Occupancy monitor running');
 });

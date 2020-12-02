@@ -1,0 +1,1 @@
+Switch occupancy_monitor "Occupancy Monitor" { http="<[https://staging.joshheng.co.uk/status:500:JS(transformOccupancyMonitor.js)]" }

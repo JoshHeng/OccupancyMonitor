@@ -70,5 +70,5 @@ void loop() {
 	}
 	else if (sendingDecrease) sendingDecrease = false;
 
-	delay(100);
+	delay(50);
 }
