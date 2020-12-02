@@ -8,3 +8,6 @@ Run `server.js` in the `server` directory. The following environment variables c
 Compile `client.ino` in the `client` folder and upload it to a NodeMCU ESP8266, with two buttons connected to `D1/GND` (up) and `D2/GND` (down).
 
 The constants at the top of the file will need to be configured according to your server
+
+## OpenHab2
+Install the HTTP binding and copy the rule, item and transform files to the relevant places

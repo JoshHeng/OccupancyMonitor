@@ -1,1 +1,1 @@
-JSON.parse(input).max;
+JSON.parse(input).max ? 'ON' : 'OFF';

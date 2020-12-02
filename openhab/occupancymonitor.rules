@@ -1,0 +1,15 @@
+rule "Occupancy Normal"
+when
+	Item occupancy_monitor changed to OFF
+then
+	light_main_color.sendCommand(new HSBType(new DecimalType(136), new PercentType(80), new PercentType(72)))
+    light_main_power.sendCommand(ON)
+end
+
+rule "Occupancy Max"
+when
+	Item occupancy_monitor changed to ON
+then
+	light_main_color.sendCommand(new HSBType(new DecimalType(14), new PercentType(88), new PercentType(82)))
+    light_main_power.sendCommand(ON)
+end
